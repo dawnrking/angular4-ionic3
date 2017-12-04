@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      个人信息
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-list-header>基本信息</ion-list-header>
+    <ion-item>
+      <ion-label color="primary">车主姓名:</ion-label>
+      <ion-input placeholder=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">车主电话:</ion-label>
+      <ion-input placeholder=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">性别:</ion-label>
+      <ion-select okText='确认' cancelText='取消'>
+        <ion-option value='0'>男</ion-option>
+        <ion-option value='1'>女</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">车主住址:</ion-label>
+      <ion-input placeholder=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary">车主线路:</ion-label>
+      <ion-input placeholder=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">车辆数量:</ion-label>
+      <ion-input placeholder=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-item [navPush]='pushPage'>
+          更多信息
+      </button>
+    </ion-item>
+
+    <!-- <ion-item>
+      <ion-label color="primary">车尾车牌号:</ion-label>
+      <ion-input placeholder=""></ion-input>
+    </ion-item> -->
+  </ion-list>
+
+</ion-content>

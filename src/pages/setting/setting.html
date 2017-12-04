@@ -1,0 +1,62 @@
+<!--
+  Generated template for the SettingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>更多</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class='bg-color'>
+
+    <ion-list class="top-list">
+        <ion-list-header>
+          1111
+        </ion-list-header>
+        <button ion-item [navPush]='pushPage'>
+            <ion-avatar item-left>
+                <!-- <img [src]="showData.userIcon" alt=""> -->
+            </ion-avatar>
+            <!-- <h2>{{showData.username}}</h2>
+            <p>账号:{{showData.account}}</p> -->
+        </button>
+
+    </ion-list>
+
+    <ion-list>
+      <ion-item>
+        控件1
+      </ion-item>
+      <button ion-item>
+        控件2
+      </button>
+      <button ion-item  (click)='showItem()'>
+        <ion-avatar item-left>
+          <!-- <img [src]="showData.userIcon" alt=""> -->
+        </ion-avatar>
+        控件3
+      </button>
+    </ion-list>
+
+    <ion-list *ngIf='show'>
+       <button ion-item>
+         版本号
+         <span item-end>V1.0</span>
+       </button>
+       <button ion-item>
+         关于
+       </button>
+    </ion-list>
+
+    <div class="footer-btn">
+      <button ion-button block (click)='logOut()'>
+        退出登录
+      </button>
+    </div>
+</ion-content>
